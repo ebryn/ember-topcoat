@@ -1,0 +1,1 @@
+window.Topcoat = window.TC = Ember.Namespace.create();
