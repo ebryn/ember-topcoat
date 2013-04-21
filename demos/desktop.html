@@ -232,16 +232,16 @@
                         {{#view TC.Button disabled=true}}Disabled Button{{/view}}
                     </p>
                     <p>
-                        {{#view TC.Button quiet=true href="#button"}}Button{{/view}}
-                        {{#view TC.Button quiet=true disabled=true}}Disabled Button{{/view}}
+                        {{#view TC.Button quiet=true href="#button"}}Quiet Button{{/view}}
+                        {{#view TC.Button quiet=true disabled=true}}Disabled Quiet Button{{/view}}
                     </p>
                     <p>
-                        {{#view TC.Button large=true href="#button"}}Button{{/view}}
-                        {{#view TC.Button large=true disabled=true}}Disabled Button{{/view}}
+                        {{#view TC.Button large=true href="#button"}}Large Button{{/view}}
+                        {{#view TC.Button large=true disabled=true}}Large Disabled Button{{/view}}
                     </p>
                     <p>
-                        {{#view TC.Button large=true quiet=true href="#button"}}Button{{/view}}
-                        {{#view TC.Button large=true quiet=true disabled=true}}Disabled Button{{/view}}
+                        {{#view TC.Button large=true quiet=true href="#button"}}Large Quiet Button{{/view}}
+                        {{#view TC.Button large=true quiet=true disabled=true}}Large Disabled Quiet Button{{/view}}
                     </p>
                 </td>
                 <td class="bg-slategray" role="presentation">
@@ -271,19 +271,19 @@
             <tr>
                 <td class="bg-light">
                     <p>
-                        {{#view TC.IconButton}}Icon Button{{/view}}
+                        {{#view TC.IconButton href="#icon-button"}}Icon Button{{/view}}
                         {{#view TC.IconButton disabled=true}}Disabled Icon Button{{/view}}
                     </p>
                     <p>
-                        {{#view TC.IconButton quiet=true}}Icon Button{{/view}}
+                        {{#view TC.IconButton quiet=true href="#icon-button"}}Icon Button{{/view}}
                         {{#view TC.IconButton quiet=true disabled=true}}Disabled Icon Button{{/view}}
                     </p>
                     <p>
-                        {{#view TC.IconButton large=true}}Icon Button{{/view}}
+                        {{#view TC.IconButton large=true href="#icon-button"}}Icon Button{{/view}}
                         {{#view TC.IconButton large=true disabled=true}}Disabled Icon Button{{/view}}
                     </p>
                     <p>
-                        {{#view TC.IconButton large=true quiet=true}}Icon Button{{/view}}
+                        {{#view TC.IconButton large=true quiet=true href="#icon-button"}}Icon Button{{/view}}
                         {{#view TC.IconButton large=true quiet=true disabled=true}}Disabled Icon Button{{/view}}
                     </p>
                 </td>
@@ -323,51 +323,27 @@
                 </td>
             </tr>
         </table>
-        <p>Icon buttons save space, use them when visible labels aren't really required. Include a text label within the icon tag to identify the button for assistive technology.</p>
+        <p>Icon buttons save space, use them when visible labels aren&#39;t really required. Include a text label within the icon tag to identify the button for assistive technology.</p>
 
         <h4 id="icon-label-button"><span>Icon Label Button</span></h4>
         <table class="preview">
             <tr>
                 <td class="bg-light">
                     <p>
-                        <a class="button" href="#icon-label-button" role="button">
-                            <i class="icon-xs example"></i>
-                            Icon Label Button
-                        </a>
-                        <a class="button disabled" role="button" aria-disabled="true">
-                            <i class="icon-xs example"></i>
-                            Disabled Icon Label Button
-                        </a>
+                        {{#view TC.IconLabelButton href="#icon-label-button"}}Icon Label Button{{/view}}
+                        {{#view TC.IconLabelButton disabled=true}}Disabled Icon Label Button{{/view}}
                     </p>
                     <p>
-                        <a class="button quiet" href="#icon-label-button" role="button">
-                            <i class="icon-xs example"></i>
-                            Quiet Icon Label Button
-                        </a>
-                        <a class="button quiet disabled" role="button" aria-disabled="true">
-                            <i class="icon-xs example"></i>
-                            Disabled Quiet Icon Label Button
-                        </a>
+                        {{#view TC.IconLabelButton quiet=true href="#icon-label-button"}}Quiet Icon Label Button{{/view}}
+                        {{#view TC.IconLabelButton quiet=true disabled=true}}Disabled Quiet Icon Label Button{{/view}}
                     </p>
                     <p>
-                        <a class="button large" href="#icon-label-button" role="button">
-                            <i class="icon-sm example"></i>
-                            Large Icon Label Button
-                        </a>
-                        <a class="button large disabled" role="button" aria-disabled="true">
-                            <i class="icon-sm example"></i>
-                            Disabled Large Icon Label Button
-                        </a>
+                        {{#view TC.IconLabelButton large=true href="#icon-label-button"}}Large Icon Label Button{{/view}}
+                        {{#view TC.IconLabelButton large=true disabled=true}}Disabled Large Icon Label Button{{/view}}
                     </p>
                     <p>
-                        <a class="button large quiet" href="#icon-label-button" role="button">
-                            <i class="icon-sm example"></i>
-                            Large Quiet Icon Label Button
-                        </a>
-                        <a class="button large quiet disabled" role="button" aria-disabled="true">
-                            <i class="icon-sm example"></i>
-                            Disabled Large Quiet Icon Label Button
-                        </a>
+                        {{#view TC.IconLabelButton large=true quiet=true href="#icon-label-button"}}Large Quiet Icon Label Button{{/view}}
+                        {{#view TC.IconLabelButton large=true quiet=true disabled=true}}Disabled Large Quiet Icon Label Button{{/view}}
                     </p>
                 </td>
                 <td class="bg-slategray">
@@ -421,12 +397,12 @@
             <tr>
                 <td class="bg-light">
                     <p>
-                        <a href="#call-to-action-button" class="button cta" role="button">Button</a>
-                        <a class="button cta disabled" role="button" aria-disabled="true">Disabled Button</a>
+                        {{#view TC.CTAButton href="#call-to-action-button"}}Button{{/view}}
+                        {{#view TC.CTAButton disabled=true}}Disabled Button{{/view}}
                     </p>
                     <p>
-                        <a href="#call-to-action-button" class="button cta large" role="button">Large Button</a>
-                        <a class="button cta large disabled" role="button" aria-disabled="true">Large Disabled Button</a>
+                        {{#view TC.CTAButton large=true href="#call-to-action-button"}}Large Button{{/view}}
+                        {{#view TC.CTAButton large=true disabled=true}}Large Disabled Button{{/view}}
                     </p>
                 </td>
                 <td class="bg-slategray">
